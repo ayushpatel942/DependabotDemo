@@ -16,4 +16,8 @@ updates:
       - "dependencies" # Labels for PRs
     ignore:
       - dependency-name: "Microsoft.EntityFrameworkCore" # Ignore updates for this dependency
+    automerged_updates:
+    - match:
+        dependency_type: "production"
+        update_type: "minor"
 
